@@ -1,9 +1,11 @@
 require './test_helper'
-require_relative 'stack'
+require './stack'
 
 class StackTest < Minitest::Test
   def test_init
     stack = Stack.new
+
+    refute_nil stack
   end
 
   def test_push
