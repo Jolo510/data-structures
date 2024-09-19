@@ -3,6 +3,8 @@
 # - Push
 # - Pop 
 # - Peek
+# - Size
+# - Empty?
 
 class Stack 
   def initialize
@@ -18,7 +20,7 @@ class Stack
   end
 
   def peek
-    @stack[@stack.length-1]
+    @stack.last
   end
 
   def size
